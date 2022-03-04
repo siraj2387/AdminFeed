@@ -1,0 +1,20 @@
+.side-navigation-panel{
+    width: 30% !important;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    height: 65px;
+    line-height: 20px;
+    background-color: #20716a;
+    font-size: 40px;
+    color: #ffd36b;
+    font-family: "Patrick Hand", cursive;
+  }
+
+  .css-gsesg6 {
+      padding: 10px !important;
+  }
