@@ -21,8 +21,10 @@ function App() {
   return (
     <div className="App">     
       <Header/>
+      <h1>Feed Form</h1>
        <SideNav/>
        {!state &&
+       
        <DataTable/>}
         {
          state&&

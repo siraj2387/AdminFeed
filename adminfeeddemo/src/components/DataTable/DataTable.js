@@ -75,13 +75,13 @@ export default function DataTable() {
     <Paper sx={{ width: '100%', overflow: 'hidden' }}>
       <TableContainer sx={{ maxHeight: 440 }}>
         <Table stickyHeader aria-label="sticky table">
-          <TableHead>
+          <TableHead class="tableHead">
             <TableRow>
               {columns.map((column) => (
                 <TableCell
                   key={column.id}
                   align={column.align}
-                  style={{ minWidth: column.minWidth }}
+                  style={{ minWidth: column.minWidth , backgroundColor: 'black' , color: 'white'}}
                 >
                   {column.label}
                 </TableCell>

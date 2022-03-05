@@ -9,12 +9,23 @@
     font-weight: 600;
     height: 65px;
     line-height: 20px;
-    background-color: #20716a;
+    background-color: lightgray;
     font-size: 40px;
-    color: #ffd36b;
+    color: black;
     font-family: "Patrick Hand", cursive;
   }
 
-  .css-gsesg6 {
-      padding: 10px !important;
+  .css-1t29gy6-MuiToolbar-root{
+      min-height:0px !important;
+  }
+
+  .css-gsesg6{
+      padding:0px !important;
+  }
+  
+
+  .css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
+      background-color: none !important;
+      /* height: 73% !important; */
+
   }

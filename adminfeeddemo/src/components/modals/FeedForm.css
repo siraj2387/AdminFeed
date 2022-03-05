@@ -6,3 +6,11 @@
     margin-top:15px !important;
     margin-right:5px !important;
 }
+
+.form{
+    width:22%;
+}
+
+.MuiFormControl-root{
+    margin-bottom: 10px !important;
+}

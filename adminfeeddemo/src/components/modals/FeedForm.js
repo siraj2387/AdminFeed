@@ -5,6 +5,11 @@ import Button from '@material-ui/core/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
+import Box from '@mui/material/Box';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 import './FeedForm.css'
 
 const useStyles = makeStyles(theme => ({
@@ -44,7 +49,7 @@ const FeedForm = ({ handleClose }) => {
        setNewForm(true);
   }
 
-  const onClose = () =>{
+  const onClose = () => {
       setNewForm(false);
   }
 
@@ -62,20 +67,32 @@ const FeedForm = ({ handleClose }) => {
         value={feedId}
         onChange={e => setFeedId(e.target.value)}
       />
-      <TextField
-        label="Feed Name"
-        variant="filled"
-        required
-        value={feedName}
-        onChange={e => setFeedName(e.target.value)}
-      />
-      <TextField
-        label="Classification"
-        variant="filled"
-        required
-        value={classification}
-        onChange={e => setClassification(e.target.value)}
-      />
+       <FormControl className="form" variant="filled" >
+        <InputLabel id="demo-simple-select-filled-label">Feed Name</InputLabel>
+        <Select
+          labelId="demo-simple-select-filled-label"
+          id="demo-simple-select-filled"
+         
+        >        
+          <MenuItem value={10}>Feed one</MenuItem>
+          <MenuItem value={20}>Feed Two</MenuItem>
+          <MenuItem value={30}>Feed Three</MenuItem>
+        </Select>
+        
+      </FormControl>
+      <FormControl className="form" variant="filled" >
+        <InputLabel id="demo-simple-select-filled-label">Classification</InputLabel>
+        <Select
+          labelId="demo-simple-select-filled-label"
+          id="demo-simple-select-filled"
+         
+        >        
+          <MenuItem value={10}>Feed one</MenuItem>
+          <MenuItem value={20}>Feed Two</MenuItem>
+          <MenuItem value={30}>Feed Three</MenuItem>
+        </Select>
+        
+      </FormControl>
       <TextField
         label="Feed Number"
         variant="filled"
@@ -94,7 +111,7 @@ const FeedForm = ({ handleClose }) => {
             autoFocus
             margin="dense"
             id="name"
-            label="feed name"       
+            label="add"       
             fullWidth
             variant="standard"
           />
@@ -111,12 +128,13 @@ const FeedForm = ({ handleClose }) => {
         </DialogActions>   
         </Dialog>
       </div>
+      
       <div>
-        <Button variant="contained" >
-          Save
+        <Button variant="contained" color="primary" onClick={addNewForm}>
+          Add Classification
         </Button>
         <Button type="submit" variant="contained" color="primary" onClick={addNewForm}>
-          Add New
+          Add  Feed Name
         </Button>
       </div>
     </form>
