@@ -1,0 +1,31 @@
+.side-navigation-panel{
+    width: 30% !important;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    height: 65px;
+    line-height: 20px;
+    background-color: lightgray;
+    font-size: 40px;
+    color: black;
+    font-family: "Patrick Hand", cursive;
+  }
+
+  .css-1t29gy6-MuiToolbar-root{
+      min-height:0px !important;
+  }
+
+  .css-gsesg6{
+      padding:0px !important;
+  }
+  
+
+  .css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
+      background-color: none !important;
+      /* height: 73% !important; */
+
+  }
